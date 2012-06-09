@@ -1,7 +1,7 @@
 use LWP::Simple;
 use JSON;
 
-$URL = "http://twitter.com/statuses/user_timeline/apoz.json?count=200";
+$URL = "http://twitter.com/statuses/user_timeline/fotomaf.json?count=200";
 $content = get($URL);
 my @decoded_json = @{decode_json($content)};
 
